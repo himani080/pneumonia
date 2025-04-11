@@ -24,12 +24,6 @@ Pneumonia is a potentially fatal lung infection. Early and accurate detection us
 - **Classes:** 
   - Normal (no pneumonia)
   - Pneumonia (includes bacterial and viral cases)
-- **Structure:**
-  - `train/`
-  - `val/`
-  - `test/`
-
----
 
 ## ⚙️ Technologies Used
 
@@ -82,24 +76,6 @@ Pneumonia is a potentially fatal lung infection. Early and accurate detection us
 
     Robust model for binary classification using medical images.
 
-📊 Sample Model Summary
-
-Model: "sequential"
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-conv2d (Conv2D)              (None, 148, 148, 64)      1792      
-max_pooling2d (MaxPooling2D) (None, 74, 74, 64)        0         
-conv2d_1 (Conv2D)            (None, 72, 72, 128)       73856     
-max_pooling2d_1 (MaxPooling2D)(None, 36, 36, 128)      0         
-flatten (Flatten)            (None, 165888)            0         
-dense (Dense)                (None, 128)               21233856  
-dropout (Dropout)            (None, 128)               0         
-dense_1 (Dense)              (None, 1)                 129       
-=================================================================
-Total params: 21,308,633
-Trainable params: 21,308,633
-Non-trainable params: 0
 
 📚 References
 
